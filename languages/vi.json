@@ -1,0 +1,9 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Danh bạ sinh viên",
+    "NSPhotoLibraryUsageDescription": "Cho phép Danh bạ sinh viên truy cập ảnh để đặt ảnh đại diện cho sinh viên."
+  },
+  "android": {
+    "app_name": "Danh bạ sinh viên"
+  }
+}

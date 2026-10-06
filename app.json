@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Btap4",
+    "name": "Student Directory",
     "slug": "Btap4",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,7 +8,10 @@
     "scheme": "btap4",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +29,22 @@
     "plugins": [
       "expo-router",
       [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": ["en", "vi"],
+            "android": ["en", "vi"]
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Student Directory to access photos for student avatars.",
+          "microphonePermission": false
+        }
+      ],
+      [
         "expo-splash-screen",
         {
           "backgroundColor": "#208AEF",
@@ -34,6 +53,10 @@
         }
       ]
     ],
+    "locales": {
+      "en": "./languages/en.json",
+      "vi": "./languages/vi.json"
+    },
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true

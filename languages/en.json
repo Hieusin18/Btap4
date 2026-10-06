@@ -1,0 +1,9 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Student Directory",
+    "NSPhotoLibraryUsageDescription": "Allow Student Directory to access photos for student avatars."
+  },
+  "android": {
+    "app_name": "Student Directory"
+  }
+}
